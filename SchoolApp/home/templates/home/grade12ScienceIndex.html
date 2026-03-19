@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+{% block title %} Gr12:Science Content {% endblock title %}
+
+{% block content %}
+
+
+<hr style="color:blanchedalmond; align-items: center;">
+<br>
+
+
+<div style = "padding-left: 20px;">
+    <ol class="list bg-base-100 rounded-box shadow-md">
+        {% for item in  list %}
+            <li style="margin-top:10px" class="list-row"><a href = '#'> <h1>Section {{item}} </h1> </a></li>
+        {% endfor %}
+    </ol>
+</div>
+
+{% endblock content%}

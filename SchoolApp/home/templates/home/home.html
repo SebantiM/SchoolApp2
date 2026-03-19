@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block title %} home page Seb {% endblock title %}
+
+{% block content %}
+
+
+
+<div class="hero bg-base-200 min-h-screen">
+  <div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src='{%  static "images/HS1.jpg"  %}'
+      alt="graduating school kids" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">GRADE 12 LESSONS </h2>
+    <p>Comprehensive Grade 12 lessons aligned with the CAPS curriculum, offering clear explanations, practice exercises, and study resources to prepare learners for final exams and future success.</p>
+    <div class="card-actions justify-end">
+      <a href="#"><button class="btn btn-primary">Learn</button></a>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock content %}

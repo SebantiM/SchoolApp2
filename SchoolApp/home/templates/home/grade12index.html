@@ -1,0 +1,161 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+{% block title %} Grade 12 Index {% endblock title %}
+
+{% block content %}
+
+
+<div class="carousel carousel-center rounded-box h-100">
+        <div class="carousel-item  h-100">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img
+                    src='{%  static "images/science1.jpg"  %}'
+                    alt="graduating school kids" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">GRADE 12: PHYSICAL SCIENCE </h2>
+                    <p>Grade 12 Physical Science  lessons</p>
+                    <div class="card-actions justify-end">
+                        <a href="{% url 'home:grade12SciecneIndex' %}"><button class="btn btn-primary">Learn</button></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+  <div class="carousel-item h-100">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img
+                    src='{%  static "images/math1.jpg"  %}'
+                    alt="graduating school kids" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">GRADE 12: MATHEMATICS </h2>
+                    <p>Grade 12 mathematics  lessons</p>
+                    <div class="card-actions justify-end">
+                        <a href="#"><button class="btn btn-primary">Learn</button></a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+
+   <div class="carousel-item h-100">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img
+                    src='{%  static "images/biology1.jpg"  %}'
+                    alt="graduating school kids" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">GRADE 12: LIFE SCIENCE </h2>
+                    <p>Grade 12 Life Sciences  lessons</p>
+                    <div class="card-actions justify-end">
+                        <a href="#"><button class="btn btn-primary">Learn</button></a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+
+
+    <div class="carousel-item h-100">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img
+                    src='{%  static "images/lifeorent2.jpg"  %}'
+                    alt="graduating school kids" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">GRADE 12: LIFE ORIENTATION </h2>
+                    <p>Grade 12 life Orientation  lessons</p>
+                    <div class="card-actions justify-end">
+                        <a href="#"><button class="btn btn-primary">Learn</button></a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+
+
+    
+    
+</div>  
+
+
+<div class="carousel carousel-center rounded-box h-100">
+
+        <div class="carousel-item h-100">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img
+                    src='{%  static "images/geo1.jpg"  %}'
+                    alt="graduating school kids" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">GRADE 12: GEOGRAPHY </h2>
+                    <p>Grade 12 Geography  lessons</p>
+                    <div class="card-actions justify-end">
+                        <a href="#"><button class="btn btn-primary">Learn</button></a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+
+
+        <div class="carousel-item h-100">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img
+                    src='{%  static "images/history1.jpg"  %}'
+                    alt="graduating school kids" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">GRADE 12:HISTORY </h2>
+                    <p>Grade 12 History  lessons</p>
+                    <div class="card-actions justify-end">
+                        <a href="#"><button class="btn btn-primary">Learn</button></a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+
+
+    <div class="carousel-item h-100">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img
+                    src='{%  static "images/accounting2.jpg"  %}'
+                    alt="graduating school kids" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">GRADE 12:ACCOUNTING </h2>
+                    <p>Grade 12 Accounting lessons</p>
+                    <div class="card-actions justify-end">
+                        <a href="#"><button class="btn btn-primary">Learn</button></a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+
+
+    <div class="carousel-item h-100">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img
+                    src='{%  static "images/economics1.jpg"  %}'
+                    alt="graduating school kids" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">GRADE 12:ECONOMICS </h2>
+                    <p>Grade 12 Economics  lessons</p>
+                    <div class="card-actions justify-end">
+                        <a href="#"><button class="btn btn-primary">Learn</button></a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+
+</div>
+
+
+{% endblock content %}
