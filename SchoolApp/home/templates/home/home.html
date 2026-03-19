@@ -17,9 +17,15 @@
   <div class="card-body">
     <h2 class="card-title">GRADE 12 LESSONS </h2>
     <p>Comprehensive Grade 12 lessons aligned with the CAPS curriculum, offering clear explanations, practice exercises, and study resources to prepare learners for final exams and future success.</p>
+    {% if user.is_authenticated %}
     <div class="card-actions justify-end">
-      <a href="#"><button class="btn btn-primary">Learn</button></a>
+      <a href="{% url 'home:grade12index' %}"><button class="btn btn-primary">Learn</button></a>
     </div>
+    {% else %}
+    <div class="card-actions justify-end">
+      <a href="{% url 'account_login'%}"><button class="btn btn-secondary">Sign-up/in</button></a>
+    </div>
+    {% endif %}
   </div>
 </div>
 </div>

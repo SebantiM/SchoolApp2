@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'home',
+    'physics',
 ]
 
 #Automatic Reloading of Tailwind CSS

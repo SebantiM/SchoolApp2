@@ -1,0 +1,65 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+{% block title %} Gr12:Science Content {% endblock title %}
+
+{% block content %}
+
+
+<hr style="color:blanchedalmond; align-items: center;">
+<br>
+
+
+<div class="breadcrumbs text-sm ml-4">
+  <ul>
+    <li>
+      <a href="{% url 'home:home'%}">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="h-4 w-4 stroke-current">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+        </svg>
+        Home
+      </a>
+    </li>
+    <li>
+      <a href ="{% url 'home:grade12index' %}">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="h-4 w-4 stroke-current">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+        </svg>
+        grade 12
+      </a>
+    </li>
+    </ul>
+</div>
+
+<hr style="color:blanchedalmond; align-items: center;">
+<br>
+ <h1 class="text-5xl font-bold text-accent ml-4">Table of Content</h1>
+ <br>
+<hr style="color:blanchedalmond; align-items: center;">
+
+<div style = "padding-left: 20px;">
+    <ol class="list bg-base-100 rounded-box shadow-md">
+        {% for item in list %}
+            <li style="margin-top:10px" class="list-row"><a href = '#'> <h1>Section {{item}} </h1> </a></li>
+        {% endfor %}
+    </ol>
+</div>
+
+{% endblock content%}
