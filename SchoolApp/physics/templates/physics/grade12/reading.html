@@ -1,3 +1,4 @@
+
 {%extends 'base.html'%}
 {%load static%}
 
@@ -6,14 +7,7 @@
 
 {% block content %}
 
-
-<hr style="color:blanchedalmond; align-items: center;">
 <br>
-
-
- <br> 
-<hr style="color:blanchedalmond; align-items: center;">
-
 
 <div class="breadcrumbs text-sm ml-4">
   <ul>
@@ -52,30 +46,21 @@
     </ul>
 </div>
 
-<hr style="color:blanchedalmond; align-items: center;">
-
-<div style = "padding-left: 20px;" id = "parent-div">
-
-  <hr style="color:blanchedalmond; align-items: center;">
-<br>
-
-<hr style="color:blanchedalmond; align-items: center;">
-<br>
- <div role="alert" class="alert alert-info">
-  <img src="{% static 'images/table-of-contents-svgrepo-com.svg' %}" alt="Content Table"  width="40" height="40">
-   <h1 class="font-bold text-4xl">Table Of Content</h1>
-</div>
- <br>
-    <ol class="list bg-base-100 rounded-box shadow-md">
-        {% for item in list %}
-            <li style="margin-top:10px" class="list-row"><button
-              hx-get = "{% url 'physics:reading' %}"
-              hx-trigger="click"
-              hx-target="#parent-div"
-               hx-swap="outerHTML"> 
-              <h1>Section {{item}} </h1> </button></li>
-        {% endfor %}
-    </ol>
+<div class="drawer mt-5">
+  <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+    <label for="my-drawer-1" class="btn drawer-button ml-5">Open drawer</label>
+    <h1 class="ml-5 mt-5"> the world is blue</h1>
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-200 min-h-full w-80 p-4">
+      <!-- Sidebar content here -->
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+    </ul>
+  </div>
 </div>
 
 {% endblock content%}
