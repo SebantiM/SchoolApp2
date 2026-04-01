@@ -7,6 +7,8 @@
 {% block content %}
 
 
+
+
 <hr style="color:blanchedalmond; align-items: center;">
 <br>
 
@@ -48,11 +50,25 @@
         grade 12
       </a>
     </li>
+    
     <li>
-      <p class="text">
+      <a href ="{% url 'physics:g12home' %}">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="h-4 w-4 stroke-current">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+        </svg>
         Physical Science
-      </p>
+      </a>
     </li>
+
+
   </ul>
 </div>
 
@@ -68,14 +84,17 @@
 </div>
  <br>
     <ol class="list bg-base-100 rounded-box shadow-md">
-        {% for item in list %}
-            <li style="margin-top:10px" class="list-row"><button
-              hx-get = "{% url 'physics:reading' %}"
+            <li style="margin-top:10px;"  
+              class="list-row">              <button
+              hx-get = "{% url 'physics:section1.1' %}"
               hx-trigger="click"
               hx-target="#parent-div"
-               hx-swap="outerHTML"> 
-              <h1>Section {{item}} </h1> </button></li>
-        {% endfor %}
+              hx-swap="outerHTML"
+              onmouseover="this.style.textDecoration = 'Underline';" 
+              onmouseout="this.style.textDecoration='none'"
+              <h1>Section 1.1:  The development of a scientific theory </h1> 
+              </button>
+              </li>
     </ol>
 </div>
 

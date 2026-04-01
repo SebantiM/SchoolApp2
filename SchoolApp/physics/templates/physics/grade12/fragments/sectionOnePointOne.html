@@ -1,0 +1,53 @@
+{%load static%}
+
+
+
+<div class="drawer mt-5">
+  <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->   
+    <h1 class=" badge badge-primary badge-xl ml-2 pl-5 mt-5"> 
+    Section 1.1:  The development of a scientific theory 
+    </h1>
+    <br>
+    <br>
+
+
+    <p class="ml-5 mr-5">
+    This book deals with the physical sciences - physics and chemistry. All the sciences 
+    are based in the use of experiment and testing to understand the world around us better. 
+    The scientific method requires us to constantly re-examine our understanding, by 
+    testing new evidence with our current theories and making changes to those theories if 
+    the evidence does not meet the test. The scientific method therefore is the powerful 
+    tool you will use throughout the physical sciences.
+    </p>
+    <div class=" ml-150 justify-center">
+        <figure>
+            <img class="float-center w-50 h-50" src="{% static 'images/uvsun_.jpg' %}" alt="Description of image">
+            <figcaption class="text-center text-sm italic mr-170">
+                Figure 1.1: An ultraviolet image of the sun 
+            </figcaption>
+        </figure>
+    </div>   
+
+
+    <p class="ml-5 mr-5"> In this chapter you will learn how to gather evidence using the scientific method. 
+    These skills will     then be used throughout this textbook to test scientific 
+    theories and practices.
+
+    <h1>  </h>
+    </p>
+
+     <label for="my-drawer-1" class="btn drawer-button ml-5">Open TOC</label>
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-200 min-h-full w-80 p-4">
+      <!-- Sidebar content here -->
+       <li><a href = "{%url 'physics:g12home'%}">Content Page</a></li>
+      <li><a href = "{% url 'physics:section1.1' %}">Section 1.1: Introduction</a></li>
+      <li><a>Sidebar Item 2</a></li>
+    </ul>
+  </div>
+</div>
+
